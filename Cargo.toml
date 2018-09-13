@@ -2,13 +2,11 @@
 name = "xed-sys"
 version = "0.1.0"
 authors = ["TA Thanh Dinh <tathanhdinh@gmail.com>"]
+description = "Low-level bindings for Intel Xed (X86 Encoded Decoded)"
 edition = "2018"
 build = "build.rs"
-
-[lib]
-crate-type = ["staticlib"]
 
 [dependencies]
 
 [build-dependencies]
-bindgen = "0.40.0"
+bindgen = { git = "https://github.com/tathanhdinh/rust-bindgen.git", branch = "no-partialord" }
