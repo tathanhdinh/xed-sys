@@ -1,5 +1,5 @@
 [package]
-name = "xed-sys"
+name = "xedsys"
 version = "0.1.0"
 authors = ["TA Thanh Dinh <tathanhdinh@gmail.com>"]
 description = "Low-level bindings for Intel Xed (X86 Encoded Decoded)"

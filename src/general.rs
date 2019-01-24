@@ -221,6 +221,43 @@ wrap_enum!(
     Last <= XED_ATTRIBUTE_LAST;
 );
 
+// Early wrapping for xed_iclass_enum_t
+
+wrap_enum!(
+    [
+        IClass <= xed_iclass_enum_t
+    ]
+    Invalid <= XED_ICLASS_INVALID;
+    Aaa <= XED_ICLASS_AAA;
+    Aad <= XED_ICLASS_AAD;
+    Aam <= XED_ICLASS_AAM;
+    Aas <= XED_ICLASS_AAS;
+    Adc <= XED_ICLASS_ADC;
+    AdcX <= XED_ICLASS_ADCX;
+    AdcLock <= XED_ICLASS_ADC_LOCK;
+    Add <= XED_ICLASS_ADD;
+    AddPD <= XED_ICLASS_ADDPD;
+    AddPS <= XED_ICLASS_ADDPS;
+    AddSD <= XED_ICLASS_ADDSD;
+    AddSS <= XED_ICLASS_ADDSS;
+    AddSubPD <= XED_ICLASS_ADDSUBPD;
+    AddSubPS <= XED_ICLASS_ADDSUBPS;
+    AddLock <= XED_ICLASS_ADD_LOCK;
+    AdoX <= XED_ICLASS_ADOX;
+    AesDec <= XED_ICLASS_AESDEC;
+    AesDecLast <= XED_ICLASS_AESDECLAST;
+    AesEnc <= XED_ICLASS_AESENC;
+    AesImc <= XED_ICLASS_AESIMC;
+    AesKeygenAssist <= XED_ICLASS_AESKEYGENASSIST;
+    And <= XED_ICLASS_AND;
+    AndN <= XED_ICLASS_ANDN;
+    AndNPD <= XED_ICLASS_ANDNPD,
+    AndNPS <= XED_ICLASS_ANDNPS,
+    AndPD <= XED_ICLASS_ANDPD,
+    AndPS <= XED_ICLASS_ANDPS,
+    AndLock <= XED_ICLASS_AND_LOCK,
+);
+
 // pub fn last_address_width() -> AddressWidth {
 //     From::from(unsafe { self::xed_address_width_enum_t_last() })
 // }
